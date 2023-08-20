@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 17
+          distribution: "jetBrains"
 
       - name: set permission for gradlew
         run: chmod +x ./gradlew
