@@ -27,7 +27,7 @@ jobs:
       with:
         fileName: 'android_keystore.jks'
         fileDir: '/home/runner/work/<<project name>>/<<project name>>/app/keystore/'
-        encodedString: ${{secrets.KEYSTORE}}
+        encodedString: ${{secrets.KEY_STORE}}
 #    - name: Build with Gradle
 #      run: ./gradlew build
     - name: Build sign apk
