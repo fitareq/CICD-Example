@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "163880183841",
+    "project_id": "cicd-test-a14b2",
+    "storage_bucket": "cicd-test-a14b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163880183841:android:9b9931d5f46e82b4381b60",
+        "android_client_info": {
+          "package_name": "org.raven.cicdexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163880183841-35guumoqf9452d7t8f4k3k1g9kefntkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.raven.cicdexample",
+            "certificate_hash": "9be236df3489197cbff7e5afce290999963ee11f"
+          }
+        },
+        {
+          "client_id": "163880183841-0irqe8ovt64hg7k5iqq2m8d93rjmebi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuEdQhNXaBhUDYtgSVzqiRdxjd6kA9o6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163880183841-0irqe8ovt64hg7k5iqq2m8d93rjmebi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
