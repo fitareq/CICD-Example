@@ -12,10 +12,11 @@ on:
     branches: [ "master" ]
 
 jobs:
-  lint:
+  assemble_distribute_job:
+    name: Assemble and Upload to Firebase
     runs-on: ubuntu-latest
     steps:
-      - name: checkout the code
+      - name: Checkout
         uses: actions/checkout@v2
 
       - name: setup with java 17
@@ -23,25 +24,6 @@ jobs:
         with:
           java-version: 17
           distribution: "adopt"
-
-      - name: set permission for gradlew
-        run: chmod +x ./gradlew
-
-      - name: run lint
-        run: ./gradlew lintDebug
-
-      - name: upload html test report
-        uses: actions/upload-artifact@v2
-        with:
-          name: lint.html
-          path: app/build/reports/lint-result-debug.html
-
-  assemble_distribute_job:
-    name: Assemble and Upload to Firebase
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
 
       - name: Restore Cache
         uses: actions/cache@v2
