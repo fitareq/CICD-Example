@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: checkout the code
         uses: actions/checkout@v2
+      - name: set permission for gradlew
+        run: chmod +x /.gradlew
       - name: run lint
         run: ./gradlew lintDebug
       - name: upload html test report
