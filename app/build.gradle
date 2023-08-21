@@ -40,7 +40,7 @@ android {
         }
         beta{
             minifyEnabled false
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
         }
     }
     compileOptions {
