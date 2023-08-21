@@ -38,10 +38,6 @@ android {
             }*/
             signingConfig signingConfigs.release
         }
-        beta{
-            minifyEnabled false
-            //signingConfig signingConfigs.release
-        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
